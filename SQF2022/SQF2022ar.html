@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="SQF2022ar.css">
+    <link rel="stylesheet" href="app.css">
+    <div id="player"></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كاس جلالة السلطان 2022: السيب ضد الرستاق</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../indexar.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>السيب ضد الرستاق</span></h2>
+            <p>
+في نهائي بطولة كأس جلالة السلطان للموسم 2022 المقام في بوشر، عمان، تواجه فريقا السيب والرستاق في مباراة مثيرة انتهت بفوز السيب بنتيجة 2-0. شهدت المباراة تألق لاعبي السيب وأحرز كل من محسن الغساني (87") وعماد الحارثي (90+4") هدفين مهمين لفريقهما. ومن الملاحظ أن الرستاق كان يسيطر على المباراة حتى الدقيقة 80، ثم تحولت الأمور بشكل مجنون. في البداية، كان فريق الرستاق يظهر استحواذاً قويًا على الكرة وسيطرة على اللعب، مما أثار قلق فريق السيب. لكن تغيرت الأمور بشكل دراماتيكي في الدقيقة 80، حيث بدأ السيب بالظهور بشكل متميز وتحسن أداؤهم تدريجياً...... </p>
+            &nbsp;
+            &nbsp;
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">شاهد الفيديو</a>
+        </div>
+    </div>
+    <div class="trailer">
+<video controls="true" poster="thumbnail.png" src="video.mp4"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>

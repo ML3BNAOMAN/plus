@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="SQF2022.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>His Majesty Final: Seeb v Rustaq</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Al Seeb vs Al Rustaq</span></h2>
+            <p>
+In the final of His Majesty Cup 2022 held in Bawshar, Oman, Al Seeb and Al Rustaq faced off in an exhilarating match that ended with Al Seeb emerging victorious with a score of 2-0. The goals came from Muhsin Al Ghassani (87') and Amjad Al Harthy (90+4') for Al Seeb. It is worth noting that Al Rustaq was in control of the game until the 80th minute, and then things took a crazy turn. Initially, Al Rustaq displayed strong ball possession and control, causing concern for Al Seeb. However, the dynamics dramatically shifted in the 80th minute when Al Seeb began to shine and gradually improve their performance........ </p>
+            &nbsp;
+            &nbsp;
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">PLAY NOW</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="video.mp4" controls="true" poster="thumbnail.png"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
