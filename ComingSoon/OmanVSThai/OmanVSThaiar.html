@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="OmanVSThaiar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بطولة كاس اسيا 2023: عُمان ضد تايلند</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../../indexar.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>عُمان ضد تايلند</span></h2>
+            <p>
+في الدور الثاني من مرحلة المجموعات ببطولة كأس آسيا 2023، ستتواجه عمان وتايلاند في مباراة مرتقبة بفارغ الصبر في قطر. بعد المواجهة المثيرة أمام السعودية، تسعى عمان للاستفادة من أدائها وتحقيق انتصار حاسم أمام الفريق التايلاندي. تتميز عمان بلعبها المنضبط والتقني، وستعتمد على نفس القواعد في هذه المباراة أيضًا. بقيادة قائدها المؤثر ولاعبي الوسط الأساسيين، ستسعى عمان للسيطرة على الكرة وضبط إيقاع المباراة. وبخط دفاع صلب واستراتيجية قوية في الهجمات المرتدة، ستكون عمان مصممة على خلق فرص التسجيل وعدم السماح لمنافسيها بالتهديد......</p>
+            &nbsp;
+            &nbsp;
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">لم يبدا البث المباشر بعد</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="Drive.mp4" controls="true" poster="thumbnail.png"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
