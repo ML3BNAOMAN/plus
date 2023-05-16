@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="OMNvIRQ.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCC CUP 25: OMAN vs IRAQ</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>OMAN v IRAQ</span></h2>
+            <p>
+               In a thrilling finale of the Arab Gulf Cup 2023 held in Basra, Iraq, Oman and Iraq locked horns in an intense battle that ended with Iraq securing a hard-fought victory of 3-2. The match provided a rollercoaster of emotions for fans from both nations. Oman showcased their determination and resilience throughout the game, with Salaah Al Yahyaei (90"+10 Penalty Kick) and Omar Al Malki (119") delivering crucial goals that kept their hopes alive until the final whistle. Their fighting spirit was evident as they pushed forward relentlessly, seeking to claim the championship title....... </p>
+            &nbsp;
+            &nbsp;
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">PLAY NOW</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="finale.mp4" controls="true" poster="thumbnail.png"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
