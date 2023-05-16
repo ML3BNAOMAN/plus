@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="ArabCup2021ar.css">
+    <link rel="stylesheet" href="app.css">
+    <div id="player"></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كاس العرب فيفا 2021: عُمان</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../indexar.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>كاس العرب فيفا 2021: عُمان</span></h2>
+            <p>
+انتهت مشاركة منتخب عُمان في بطولة كأس العرب للفيفا 2021 التي أقيمت في قطر بنتائج متباينة ومشاعر متضاربة. أظهر المنتخب الوطني مهاراته وتصميمه طوال البطولة، لكنه لم يتمكن في النهاية من تجاوز مراحل الإقصاء. بدأت المشوار بتعادل 1-1 أمام العراق في المباراة الافتتاحية. كانت مواجهة محتدمة حيث أظهرت عُمان الصمود، لكنها لم تتمكن من تحقيق الفوز. في المباراة الثانية، واجهت عُمان المنتخب القطري القوي وتلقت هزيمة ضيقة بنتيجة 2-1. على الرغم من الجهود المبذولة، لم تتمكن من تخطي تحدي قطر......</p>
+            &nbsp;
+            &nbsp;
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">شاهد الفيديو</a>
+        </div>
+    </div>
+    <div class="trailer">
+<iframe src="https://www.dropbox.com/s/4nvjd75co9cnk9c/%D9%85%D9%84%D8%AE%D8%B5%20%D8%AC%D9%85%D9%8A%D8%B9%20%D9%85%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A7%D8%AD%D9%85%D8%B1%20%D9%81%D9%8A%20%D9%83%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8.mp4?raw=1" height="1280px" width="720px" allowfullscreen></iframe>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
