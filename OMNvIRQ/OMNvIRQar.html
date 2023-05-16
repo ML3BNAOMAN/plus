@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="OMNvIRQar.css">
+    <link rel="stylesheet" href="app.css">
+    <div id="player"></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كاس الخليج العربي 25: عّمان ضد العراق</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../indexar.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>عُمان ضد العراق</span></h2>
+            <p>
+في نهائي بطولة كأس الخليج العربي 2023 المقام في البصرة، العراق، تواجهت عمان والعراق في مواجهة مثيرة انتهت بانتصار العراق بنتيجة 3-2. شهدت المباراة مشاعر متقلبة لجماهير الفريقين. أظهر منتخب عمان تصميمه وصموده طوال المباراة، حيث سجل صلاح اليحيائي (90"+10 ركلة جزاء) وعمر الملكي (119") هدفين مهمين حافظا على آمال فريقهما حتى النهاية. كانت روح القتال واضحة في تحركاتهم وسعيهم المستمر للفوز بلقب البطولة. </p>
+            &nbsp;
+            &nbsp;
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">شاهد الفيديو</a>
+        </div>
+    </div>
+    <div class="trailer">
+<video controls="true" poster="thumbnail.png" src="finale.mp4"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
