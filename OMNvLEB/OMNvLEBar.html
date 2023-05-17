@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="OMNvLEBar.css">
+    <link rel="stylesheet" href="app.css">
+    <div id="player"></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مباراة ودية: عُمان ضد لبنان</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../indexar.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>عُمان ضد لبنان</span></h2>
+            <p>
+في مباراة ودية أقيمت في استاد السلطان قابوس الرياضي، أظهرت عمان قوتها في مواجهة لبنان، حيث حققت الفوز بنتيجة 2-0. تألق عسام الصبحي في المباراة بتسجيله هدفين، أحرز الأول في الشوط الأول والثاني في الشوط الثاني. منذ بداية المباراة، أظهر منتخب عمان عزيمته ومهارته على أرض الملعب، حيث خلق فرص تسجيل الأهداف وسيطر على المباراة. وكان عسام الصبحي هو الذي فتح التسجيل، حيث وضع الكرة في الشباك في الشوط الأول ومنح عمان تقدمًا مستحقًا. في الشوط الثاني، استمرت عمان في أداءها المهيمن، وواصلت الهجوم وخلق فرص لزيادة تفوقها. وجاء ثمرة جهودهم حينما سجل عسام الصبحي هدفًا .....ثانيًا لتعزيز تفوق عمان في المباراة.</p>
+            &nbsp;
+            &nbsp;
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">شاهد الفيديو</a>
+        </div>
+    </div>
+    <div class="trailer">
+<iframe src="https://www.dropbox.com/s/us862grgq4wp1pc/oman%20v%20lebanon.mp4?raw=1" height="1280px" width="720px" allowfullscreen></iframe>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
