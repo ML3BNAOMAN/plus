@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="OTS2ar.css">
+    <link rel="stylesheet" href="app.css">
+    <div id="player"></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقرير: الحراسة العُمانية في مأمن</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../indexar.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>الحراسة العُمانية في مأمن</span></h2>
+            <p>بعد أن قدم علي الحبسي مستويات رائعة كحارس مرمى لمنتخب عمان، وبعد أن قام فايز الرشيدي بدوره الواجب بتميز كحارس مرمى للمنتخب، حان الوقت لإبراهيم المخيني، نجم نادي النهضة، أن يتألق ويحصد مكانًا في حفاظ المرمى العماني. إبراهيم المخيني يتمتع بمهارات استثنائية وقدرات فريدة في التصدي للكرات والتحكم في المباريات. لقد لاحظته الجماهير والمحترفون على حد سواء بفضل قدراته الاستثنائية وتفانيه في العمل. يعتبر إبراهيم المخيني اللاعب الشاب الموهوب الذي يمكن أن يمنح منتخب عمان الثقة والاستقرار في الدفاع عن المرمى. إن وقوفه على مستوى تحديات اللعبة الدولية سيكون فرصة له لتحقيق تأثير كبير وترك بصمته في تاريخ كرة القدم العمانية...... </p>
+            &nbsp;
+            &nbsp;
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">شاهد الفيديو</a>
+        </div>
+    </div>
+    <div class="trailer">
+<iframe src="https://www.dropbox.com/s/atb2n5oqj72nyri/OST2.mp4?raw=1" height="1280px" width="720px" allowfullscreen></iframe>
+
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
