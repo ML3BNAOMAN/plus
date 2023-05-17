@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="OMNvLEB.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FM: OMAN v LEBANON</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>OMAN v LEBANON</span></h2>
+            <p>
+In a friendly match held at Sultan Qaboos Sports Complex, Oman showcased their prowess against Lebanon, securing a well-deserved victory with a score of 2-0. Issam Al Subhi emerged as the hero of the game, scoring a brace with one goal in the first half and the other in the second half. From the kickoff, Oman demonstrated their determination and skill on the pitch, creating scoring opportunities and maintaining control of the game. It was Issam Al Subhi who broke the deadlock, finding the back of the net in the first half and giving Oman a well-deserved lead. In the second half, Oman continued their dominant performance, pressing forward and creating chances to extend their....... </p>
+            &nbsp;
+            &nbsp;
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">PLAY NOW</a>
+        </div>
+    </div>
+    <div class="trailer">
+<iframe src="https://www.dropbox.com/s/us862grgq4wp1pc/oman%20v%20lebanon.mp4?raw=1" height="1280px" width="720px" allowfullscreen></iframe>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
