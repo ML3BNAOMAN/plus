@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="OST1ar.css">
+    <link rel="stylesheet" href="app.css">
+    <div id="player"></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقرير: إعتزال محمد المسلمي دوليا</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../indexar.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>المسلمي: يعتزل طوعا لا كرها</span></h2>
+            <p>
+محمد المسلمي، المدافع العماني في منتخب بلاده، أعلن مؤخرًا اعتزاله اللعب الدولي، مما يشكل نهاية لمسيرة مجيدة. يعرف المسلمي بتفانيه اللا متناهي، ومهاراته الدفاعية المميزة، وصفاته القيادية، حيث كان عمودًا أساسيًا في منتخب عمان لأكثر من عقد من الزمان. بعد مشاركات عديدة وأداء مذهل، أصبح رمزًا للتفاني والولاء لوطنه. قراره بالتقاعد من كرة القدم الدولية يأتي كمفاجأة للعديد من المشجعين الذين أعجبوا بشغفه ومساهماته في الفريق. رحيل المسلمي يترك فراغًا في الدفاع العماني، لكن إرثه كأيقونة كروية حقيقية سيستمر في إلهام الأجيال القادمة من اللاعبين...... </p>
+            &nbsp;
+            &nbsp;
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">شاهد الفيديو</a>
+        </div>
+    </div>
+    <div class="trailer">
+<iframe src="https://www.dropbox.com/s/bh1gvxg2nwa9xnk/OST1.mp4?raw=1" height="1280px" width="720px" allowfullscreen></iframe>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+
+</body>
+</html>
