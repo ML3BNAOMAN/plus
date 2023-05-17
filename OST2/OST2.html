@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="OTS2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMANI NETS ARE SAFE</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>OMANI NETS IS SAFE</span></h2>
+            <p>
+After the exceptional performances of Ali Al-Habsi and Faiyez Al Rushaidi as goalkeepers for Oman, the time has now come for Ibrahim Al Mukhaini, the star of Al-Nahdha club, to make his mark in keeping the Omani nets safe. Following in the footsteps of these legendary goalkeepers, Al Mukhaini possesses the skills and potential to become a formidable presence between the posts. Known for his agility, reflexes, and commanding presence, he has showcased his abilities......... </p>
+            &nbsp;
+            &nbsp;
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">PLAY NOW</a>
+        </div>
+    </div>
+    <div class="trailer">
+    <iframe src="https://www.dropbox.com/s/atb2n5oqj72nyri/OST2.mp4?raw=1" height="1280px" width="720px" allowfullscreen></iframe>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
