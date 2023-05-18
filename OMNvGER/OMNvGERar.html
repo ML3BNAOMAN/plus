@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="OMNvGERar.css">
+    <link rel="stylesheet" href="app.css">
+    <div id="player"></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مباراة ودية: عُمان ضد المانيا</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../indexar.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>عُمان ضد المانيا</span></h2>
+            <p>
+في مباراة ودية أقيمت في استاد السلطان قابوس الرياضي، خاض منتخب عمان مباراة قوية ضد المانيا، حيث انتهت المباراة بفوز المانيا بهدف واحد مقابل لا شيء، حيث سجل نيكولاس فولكروغ الهدف الوحيد في الدقيقة الثمانين. على الرغم من الخسارة، قدمت عمان أداءً مميزًا خلال المباراة، حيث كانوا مهيمنين على المباراة طوال الوقت. قادتهم الروح القتالية والمهارة إلى خلق العديد من الفرص، وسيطروا على مجريات اللعب. ومع ذلك، ارتكبت عمان أخطاء بسيطة أدت إلى تسجيل هدف من قبل المانيا وسط اللقاء. رغم السيطرة التامة، فقد انتزعت المانيا الفوز بفضل تلك اللحظة الحاسمة......</p>
+            &nbsp;
+            &nbsp;
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">شاهد الفيديو</a>
+        </div>
+    </div>
+    <div class="trailer">
+<iframe src="https://www.dropbox.com/s/6hxdfxwj2su2e1s/oman%20v%20germany.mp4?raw=1" height="1280px" width="720px" allowfullscreen></iframe>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+</body>
+</html>
