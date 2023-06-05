@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="ArabCup2021.css">
+          <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIFA ARAB CUP 2021: Oman</title>
@@ -21,8 +25,26 @@
             <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">PLAY NOW</a>
         </div>
     </div>
-    <div class="trailer">
-<iframe src="https://www.dropbox.com/s/4nvjd75co9cnk9c/%D9%85%D9%84%D8%AE%D8%B5%20%D8%AC%D9%85%D9%8A%D8%B9%20%D9%85%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A7%D8%AD%D9%85%D8%B1%20%D9%81%D9%8A%20%D9%83%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8.mp4?raw=1" height="1280px" width="720px" allowfullscreen></iframe>
+    <div class="trailer">                 
+        <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    poster="advert.jpg"
+    data-setup="{}"
+  >
+    <source src="https://www.dropbox.com/s/4nvjd75co9cnk9c/%D9%85%D9%84%D8%AE%D8%B5%20%D8%AC%D9%85%D9%8A%D8%B9%20%D9%85%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A7%D8%AD%D9%85%D8%B1%20%D9%81%D9%8A%20%D9%83%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8.mp4?raw=1" type="video/mp4" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
         <img src="close.png" alt="" class="close" onclick="toggle();">
     </div>
     <script>
@@ -34,5 +56,7 @@
         video.pause();
     }
     </script>
+         <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
+
 </body>
 </html>
