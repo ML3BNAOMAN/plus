@@ -29,7 +29,7 @@ header .toggle{
     width: 100%;
     min-height: 100vh;
     padding: 0 100px;
-    background: url(bg.jpg);
+    background: url(bgar.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -44,7 +44,6 @@ header .toggle{
     font-weight: 400;
     font-size: 2.5em;
     font-family: sans-serif;
-    letter-spacing: 0.1em;
     color: #bbe460;
 }
 .banner .content h2 span{
@@ -54,7 +53,6 @@ header .toggle{
     
     font-weight: 300;
     font-size: 1.2em;
-    letter-spacing: 0.02em;
     line-height: 1.5em;
     color: #fff;
     margin: 15px 0 35px;
@@ -68,7 +66,6 @@ header .toggle{
     text-transform: uppercase;
     font-weight: 500;
     text-decoration: none;
-    letter-spacing: 2px;
     font-size: 1.2em;
 }
 .play img{
