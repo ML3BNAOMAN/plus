@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <link rel="stylesheet" href="OTS2ar.css">
+    <link rel="stylesheet" href="app.css">
+    <div id="player"></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقرير: الحراسة العُمانية في مأمن</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../indexar.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>الحراسة العُمانية في مأمن</span></h2>
+            <p>بعد أن قدم علي الحبسي مستويات رائعة كحارس مرمى لمنتخب عمان، وبعد أن قام فايز الرشيدي بدوره الواجب بتميز كحارس مرمى للمنتخب، حان الوقت لإبراهيم المخيني، نجم نادي النهضة، أن يتألق ويحصد مكانًا في حفاظ المرمى العماني. إبراهيم المخيني يتمتع بمهارات استثنائية وقدرات فريدة في التصدي للكرات والتحكم في المباريات. لقد لاحظته الجماهير والمحترفون على حد سواء بفضل قدراته الاستثنائية وتفانيه في العمل. يعتبر إبراهيم المخيني اللاعب الشاب الموهوب الذي يمكن أن يمنح منتخب عمان الثقة والاستقرار في الدفاع عن المرمى. إن وقوفه على مستوى تحديات اللعبة الدولية سيكون فرصة له لتحقيق تأثير كبير وترك بصمته في تاريخ كرة القدم العمانية...... </p>
+            &nbsp;
+            &nbsp;
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">شاهد الفيديو</a>
+        </div>
+    </div>
+    <div class="trailer">
+
+                       <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    poster="advertar.jpg"
+    data-setup="{}"
+  >
+    <source src="https://www.dropbox.com/s/atb2n5oqj72nyri/OST2.mp4?raw=1" type="video/mp4" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+             <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
+
+</body>
+</html>
