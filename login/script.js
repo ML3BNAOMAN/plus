@@ -39,19 +39,19 @@ createacctbtn.addEventListener("click", function() {
   signupEmail = signupEmailIn.value;
   confirmSignupEmail = confirmSignupEmailIn.value;
   if(signupEmail != confirmSignupEmail) {
-      window.alert("Email fields do not match. Try again.")
+      window.alert("البريد الإلكتروني غير متطابق. حاول مرة اخرى.")
       isVerified = false;
   }
 
   signupPassword = signupPasswordIn.value;
   confirmSignUpPassword = confirmSignUpPasswordIn.value;
   if(signupPassword != confirmSignUpPassword) {
-      window.alert("Password fields do not match. Try again.")
+      window.alert("كلمة المرور غير متطابقة. حاول مرة اخرى.")
       isVerified = false;
   }
   
   if(signupEmail == null || confirmSignupEmail == null || signupPassword == null || confirmSignUpPassword == null) {
-    window.alert("Please fill out all required fields.");
+    window.alert("أكمل جميع الفراغات.");
     isVerified = false;
   }
   
@@ -61,13 +61,13 @@ createacctbtn.addEventListener("click", function() {
       // Signed in 
       const user = userCredential.user;
       // ...
-      window.alert("Success! Account created.");
+      window.alert("تم إنشاء الحساب بنجاح!");
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
       // ..
-      window.alert("Error occurred. Try again.");
+      window.alert("هناك خطأ, حاول مرة أخرى.");
     });
   }
 });
@@ -82,15 +82,16 @@ submitButton.addEventListener("click", function() {
     .then((userCredential) => {
       // Signed in
       const user = userCredential.user;
-      console.log("Success! Welcome back!");
-      window.alert("Success! Welcome back!");
+      console.log("تم تسجيل الدخول بنجاح");
+      window.alert("تم تسجيل الدخول بنجاح");
+      window.location.assign('/../sucess.html')
       // ...
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      console.log("Error occurred. Try again.");
-      window.alert("Error occurred. Try again.");
+      console.log("هناك خطأ, حاول مرة أخرى.");
+      window.alert("هناك خطأ, حاول مرة أخرى.");
     });
 });
 
