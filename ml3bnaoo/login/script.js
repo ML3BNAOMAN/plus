@@ -84,7 +84,7 @@ submitButton.addEventListener("click", function() {
       const user = userCredential.user;
       console.log("تم تسجيل الدخول بنجاح");
       window.alert("تم تسجيل الدخول بنجاح");
-      window.location.assign('/../sucess.html')
+      window.location.assign('/./sucess.html')
       // ...
     })
     .catch((error) => {
