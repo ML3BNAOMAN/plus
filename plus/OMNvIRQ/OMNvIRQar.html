@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <link rel="stylesheet" href="OMNvIRQar.css">
+    <link rel="stylesheet" href="app.css">
+    <div id="player"></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كاس الخليج العربي 25: عّمان ضد العراق</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../indexar.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>عُمان ضد العراق</span></h2>
+            <p>
+في نهائي بطولة كأس الخليج العربي 2023 المقام في البصرة، العراق، تواجهت عمان والعراق في مواجهة مثيرة انتهت بانتصار العراق بنتيجة 3-2. شهدت المباراة مشاعر متقلبة لجماهير الفريقين. أظهر منتخب عمان تصميمه وصموده طوال المباراة، حيث سجل صلاح اليحيائي (90"+10 ركلة جزاء) وعمر الملكي (119") هدفين مهمين حافظا على آمال فريقهما حتى النهاية. كانت روح القتال واضحة في تحركاتهم وسعيهم المستمر للفوز بلقب البطولة. </p>
+            &nbsp;
+            &nbsp;
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">شاهد الفيديو</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    poster="advertar.jpg"
+    data-setup="{}"
+  >
+    <source src="https://www.dropbox.com/s/91voa1s5qau9pdc/gulf%20cup.mp4?raw=1" type="video/mp4" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+             <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
+</body>
+</html>

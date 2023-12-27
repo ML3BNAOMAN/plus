@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="OMNvGER.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FM: OMAN v GERMANY</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+    <div class="toggle"><a href="../index.html"><img src="toggle.png" alt=""></a></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>OMAN v GERMANY</span></h2>
+            <p>
+In a friendly match held at Sultan Qaboos Sports Complex, Oman put on an impressive display against Germany, despite ultimately suffering a 1-0 defeat. The lone goal of the game was scored by Nickolas Fullkrug for Germany in the 80th minute. Oman showcased their dominance throughout the match but fell victim to a single lapse in concentration, allowing Germany to snatch a goal. From the start, Oman showcased their strength and skill, controlling the game and posing a constant threat to the German defense........ </p>
+            &nbsp;
+            &nbsp;
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">PLAY NOW</a>
+        </div>
+    </div>
+    <div class="trailer">
+                 <video controls poster="thumbnail.png" src="https://www.dropbox.com/s/6hxdfxwj2su2e1s/oman%20v%20germany.mp4?raw=1" height="720" width="1080"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+</body>
+</html>
